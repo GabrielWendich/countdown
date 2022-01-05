@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Countdown</title>
+</head>
+<body>
+    <img src="./assets/top-image.svg" alt="imagem de composição do fundo" id="top-bg">
+    <div id="center">
+        <div id="main">
+            <header>Ready to Launch in...</header>
+            <main id="countdown">
+                <div id="datatime">
+                    <p class="timer">Dias</p>
+                    <p class="timer">Horas</p>
+                    <p class="timer">Minutos</p>
+                    <p class="timer">Segundos</p>
+                </div>
+                <div id="time">
+                    <p id="days" class="timer">00</p><span>:</span>
+                    <p id="hours" class="timer">00</p><span>:</span>
+                    <p id="minutes" class="timer">00</p><span>:</span>
+                    <p id="seconds" class="timer">00</p>
+                </div>
+            </main>
+            <p id="subscribe-message">Inscreva-se para saber mais sobre o lançamento</p>
+            <button id="subscribe">Inscreva-se</button>
+        </div>
+        <img src="./assets/rocket.svg" alt="imagem de um foguete" id="rocket">
+    </div>
+    <img src="./assets/bottom-image.svg" alt="imagem de composição do fundo" id="bottom-bg">
+
+
+    <!-- MODAL -->
+    <div id="modal" style="display:none">
+        <div id="modal-content">
+            <form action="" method="get">
+                <label for="name">Digite seu nome completo:</label>
+                <input type="text" name="name" id="name" placeholder="Nome Completo" size="35" title="Nome Completo">
+                <label for="email">Digite seu melhor e-mail:</label>
+                <input type="email" name="email" id="email" placeholder="email@email.com" size="35" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="email@domínio.com">
+                <button id="subscribed" type="submit">Inscreva-se</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
